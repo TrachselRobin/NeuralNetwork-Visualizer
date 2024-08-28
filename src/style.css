@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewBox {
+    width: 80%;
+    height: 65%;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#output {
+    width: 80%;
+    height: 20%;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+/*
+style for:
+
+<div id="viewBox">
+    <div id="inputLayer">
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+    </div>
+
+    <div class="hiddenLayer">
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+    </div>
+    
+    <div class="hiddenLayer">
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+    </div>
+
+    <div id="outputLayer">
+        <div class="neuron"></div>
+        <div class="neuron"></div>
+    </div>
+</div>
+*/
+
+#viewBox > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    width: 15%;
+    border-radius: 50px;
+}
+
+#inputLayer {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.hiddenLayer {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#outputLayer {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.neuron {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 10, 10);
+    border-radius: 50%;
+}
